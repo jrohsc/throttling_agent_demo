@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Throttling Web Agents Using Reasoning Gates</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -122,24 +122,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -157,122 +139,120 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Interactive Demo Section -->
+<section class="hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="has-text-centered" style="margin-bottom: 2rem;">
+        <h2 class="title is-3">Try the Interactive Demo</h2>
+        <p class="subtitle is-5" style="margin-bottom: 2rem;">
+          Experience the same throttling challenge that our Web Agent solved. Can you pass the reasoning gate?
+        </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      
+      <div class="columns">
+        <!-- Demo iframe -->
+        <div class="column is-three-quarters">
+          <div style="border: 2px solid #dbdbdb; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            <iframe 
+              src="https://cs360awesome.space/ai2/puzzle.html?questions=5&minCorrect=2" 
+              width="100%" 
+              height="600"
+              frameborder="0"
+              style="display: block;">
+            </iframe>
+          </div>
+        </div>
+        
+        <!-- Instructions sidebar -->
+        <div class="column is-one-quarter">
+          <div class="box" style="height: fit-content; background-color: #f8f9fa;">
+            <h4 class="title is-5" style="color: #2c3e50; margin-bottom: 1rem;">
+              <i class="fas fa-info-circle" style="color: #3498db; margin-right: 0.5rem;"></i>
+              How it works
+            </h4>
+            <div class="content" style="font-size: 0.95rem;">
+              <p><strong>Challenge:</strong> Answer reasoning questions to unlock the secret message.</p>
+              
+              <p><strong>Requirements:</strong></p>
+              <ul style="margin-left: 1rem;">
+                <li>5 total questions</li>
+                <li>Minimum 2 correct answers</li>
+                <li>Pass the reasoning gate</li>
+              </ul>
+              
+              <p><strong>Goal:</strong> Reach the secret message that proves you've successfully overcome the throttling mechanism.</p>
+              
+              <div style="background-color: #e8f6f3; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                <p style="margin: 0; font-size: 0.9rem; color: #27ae60;">
+                  <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i>
+                  <strong>Tip:</strong> This is the same challenge our AI agent mastered!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+      
+      <!-- Call to action -->
+      <div class="has-text-centered" style="margin-top: 2rem;">
+        <p class="is-size-6" style="color: #666;">
+          <a href="https://cs360awesome.space/ai2/puzzle.html?questions=5&minCorrect=2" target="_blank" class="button is-primary is-outlined">
+            <span class="icon">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <span>Open in Full Screen</span>
+          </a>
+        </p>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Interactive Demo -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-vcentered">
+        <!-- Video Column -->
+        <div class="column is-half">
+          <video poster="" id="tree" autoplay controls muted loop height="100%" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <!-- Your video here -->
+            <source src="static/videos/Throttling.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <!-- Description Column -->
+        <div class="column is-half">
+          <div class="content" style="padding-left: 2rem;">
+            <h2 class="title is-4" style="color: #363636; margin-bottom: 1rem;">
+              Browser-Use Web Agent Demo
+            </h2>
+            <div class="has-text-justified" style="font-size: 1.1rem; line-height: 1.6;">
+              <p style="margin-bottom: 1rem;">
+                This demo video showcases the <strong>browser-use Web Agent</strong> successfully solving our throttling problem.
+              </p>
+              <p style="margin-bottom: 1rem;">
+                The agent navigates through a series of reasoning challenges on our hosted website, demonstrating its ability to:
+              </p>
+              <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                <li>Process and understand complex questions</li>
+                <li>Reason through multi-step problems</li>
+                <li>Interact with web interfaces intelligently</li>
+              </ul>
+              <p style="margin-bottom: 0;">
+                After correctly answering all required questions, the website reveals a <span style="color: #3273dc; font-weight: 600;">secret message</span> - confirming that the agent has successfully passed the reasoning gate and overcome the throttling mechanism.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
+<!-- End teaser video -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
