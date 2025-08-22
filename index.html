@@ -138,113 +138,205 @@
   </div>
 </section>
 <!-- End paper abstract -->
-
 <!-- Interactive Demo Section -->
 <section class="hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container is-fullhd">
     <div class="hero-body">
-      <div class="has-text-centered" style="margin-bottom: 2rem;">
-        <h2 class="title is-3">Try the Interactive Demo</h2>
-        <p class="subtitle is-5" style="margin-bottom: 2rem;">
+      <div class="has-text-centered" style="margin-bottom: 3rem;">
+        <h2 class="title is-2" style="background: linear-gradient(45deg, #3273dc, #209cee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+          🚀 Try the Interactive Demo
+        </h2>
+        <p class="subtitle is-4" style="margin-bottom: 2rem; color: #4a4a4a; font-weight: 500;">
           Experience the same throttling challenge that our Web Agent solved. Can you pass the reasoning gate?
         </p>
       </div>
       
-      <div class="columns">
-        <!-- Demo iframe -->
-        <div class="column is-three-quarters">
-          <div style="border: 2px solid #dbdbdb; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      <!-- Demo iframe - Full width on top -->
+      <div class="has-text-centered" style="margin-bottom: 3rem;">
+        <div style="
+          border: 3px solid #3273dc; 
+          border-radius: 12px; 
+          overflow: hidden; 
+          box-shadow: 0 8px 25px rgba(50, 115, 220, 0.3);
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          padding: 4px;
+          max-width: 1200px;
+          margin: 0 auto;
+        ">
+          <div style="background: white; border-radius: 8px; overflow: hidden;">
             <iframe 
               src="https://cs360awesome.space/ai2/puzzle.html?questions=5&minCorrect=2" 
               width="100%" 
-              height="600"
+              height="700"
               frameborder="0"
               style="display: block;">
             </iframe>
           </div>
         </div>
+      </div>
+      
+      <!-- Instructions below - Now in cards -->
+      <div class="columns is-variable is-6">
+        <div class="column is-one-third">
+          <div class="box" style="
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            color: white;
+            text-align: center;
+            height: 100%;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+            <h4 class="title is-5" style="color: white; margin-bottom: 1rem;">Challenge</h4>
+            <p style="margin: 0;">Answer reasoning questions to unlock the secret message and prove your intelligence!</p>
+          </div>
+        </div>
         
-        <!-- Instructions sidebar -->
-        <div class="column is-one-quarter">
-          <div class="box" style="height: fit-content; background-color: #f8f9fa;">
-            <h4 class="title is-5" style="color: #2c3e50; margin-bottom: 1rem;">
-              <i class="fas fa-info-circle" style="color: #3498db; margin-right: 0.5rem;"></i>
-              How it works
-            </h4>
-            <div class="content" style="font-size: 0.95rem;">
-              <p><strong>Challenge:</strong> Answer reasoning questions to unlock the secret message.</p>
-              
-              <p><strong>Requirements:</strong></p>
-              <ul style="margin-left: 1rem;">
-                <li>5 total questions</li>
-                <li>Minimum 2 correct answers</li>
-                <li>Pass the reasoning gate</li>
-              </ul>
-              
-              <p><strong>Goal:</strong> Reach the secret message that proves you've successfully overcome the throttling mechanism.</p>
-              
-              <div style="background-color: #e8f6f3; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
-                <p style="margin: 0; font-size: 0.9rem; color: #27ae60;">
-                  <i class="fas fa-lightbulb" style="margin-right: 0.5rem;"></i>
-                  <strong>Tip:</strong> This is the same challenge our AI agent mastered!
-                </p>
-              </div>
-            </div>
+        <div class="column is-one-third">
+          <div class="box" style="
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            color: white;
+            text-align: center;
+            height: 100%;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📋</div>
+            <h4 class="title is-5" style="color: white; margin-bottom: 1rem;">Requirements</h4>
+            <ul style="list-style: none; margin: 0; padding: 0;">
+              <li>✓ 5 total questions</li>
+              <li>✓ Minimum 2 correct</li>
+              <li>✓ Pass reasoning gate</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            color: #2c3e50;
+            text-align: center;
+            height: 100%;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">💡</div>
+            <h4 class="title is-5" style="color: #2c3e50; margin-bottom: 1rem;">AI Agent Success</h4>
+            <p style="margin: 0; font-weight: 600;">This is the same challenge our AI agent mastered autonomously!</p>
           </div>
         </div>
       </div>
       
       <!-- Call to action -->
-      <div class="has-text-centered" style="margin-top: 2rem;">
-        <p class="is-size-6" style="color: #666;">
-          <a href="https://cs360awesome.space/ai2/puzzle.html?questions=5&minCorrect=2" target="_blank" class="button is-primary is-outlined">
-            <span class="icon">
-              <i class="fas fa-external-link-alt"></i>
-            </span>
-            <span>Open in Full Screen</span>
-          </a>
-        </p>
+      <div class="has-text-centered" style="margin-top: 3rem;">
+        <a href="https://cs360awesome.space/ai2/puzzle.html?questions=5&minCorrect=2" target="_blank" 
+           class="button is-primary is-large" style="
+             background: linear-gradient(45deg, #667eea, #764ba2);
+             border: none;
+             border-radius: 25px;
+             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+             transition: all 0.3s ease;
+           ">
+          <span class="icon is-medium">
+            <i class="fas fa-external-link-alt"></i>
+          </span>
+          <span style="font-weight: 600;">Open in Full Screen</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 <!-- End Interactive Demo -->
 
-
-<!-- Teaser video-->
+<!-- Teaser video - Video on top, description below -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-vcentered">
-        <!-- Video Column -->
-        <div class="column is-half">
-          <video poster="" id="tree" autoplay controls muted loop height="100%" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <!-- Your video here -->
+    <div class="hero-body" style="padding: 4rem 1.5rem;">
+      <!-- Video Section - Now on top and bigger -->
+      <div class="has-text-centered" style="margin-bottom: 3rem;">
+        <h2 class="title is-2" style="
+          background: linear-gradient(45deg, #ff6b6b, #ee5a24); 
+          -webkit-background-clip: text; 
+          -webkit-text-fill-color: transparent; 
+          background-clip: text;
+          margin-bottom: 2rem;
+        ">
+          🎬 Browser-Use Web Agent Demo
+        </h2>
+        <div style="
+          border: 4px solid #ff6b6b; 
+          border-radius: 16px; 
+          overflow: hidden; 
+          box-shadow: 0 12px 35px rgba(255, 107, 107, 0.3);
+          background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+          padding: 6px;
+          max-width: 900px;
+          margin: 0 auto;
+        ">
+          <video poster="" id="tree" autoplay controls muted loop height="100%" style="
+            width: 100%; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            background: black;
+          ">
             <source src="static/videos/Throttling.mp4" type="video/mp4">
           </video>
         </div>
-        
-        <!-- Description Column -->
-        <div class="column is-half">
-          <div class="content" style="padding-left: 2rem;">
-            <h2 class="title is-4" style="color: #363636; margin-bottom: 1rem;">
-              Browser-Use Web Agent Demo
-            </h2>
-            <div class="has-text-justified" style="font-size: 1.1rem; line-height: 1.6;">
-              <p style="margin-bottom: 1rem;">
-                This demo video showcases the <strong>browser-use Web Agent</strong> successfully solving our throttling problem.
-              </p>
-              <p style="margin-bottom: 1rem;">
-                The agent navigates through a series of reasoning challenges on our hosted website, demonstrating its ability to:
-              </p>
-              <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
-                <li>Process and understand complex questions</li>
-                <li>Reason through multi-step problems</li>
-                <li>Interact with web interfaces intelligently</li>
-              </ul>
-              <p style="margin-bottom: 0;">
-                After correctly answering all required questions, the website reveals a <span style="color: #3273dc; font-weight: 600;">secret message</span> - confirming that the agent has successfully passed the reasoning gate and overcome the throttling mechanism.
-              </p>
+      </div>
+      
+      <!-- Description Section - Now below video -->
+      <div class="content has-text-centered">
+        <div class="box" style="
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          border: none;
+          border-radius: 16px;
+          color: white;
+          padding: 2.5rem;
+          box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+          max-width: 800px;
+          margin: 0 auto;
+        ">
+          <div style="font-size: 1.2rem; line-height: 1.8;">
+            <p style="margin-bottom: 1.5rem;">
+              This demo video showcases the <strong style="color: #ffd700;">browser-use Web Agent</strong> successfully solving our throttling problem.
+            </p>
+            <p style="margin-bottom: 1.5rem;">
+              The agent navigates through a series of reasoning challenges on our hosted website, demonstrating its ability to:
+            </p>
+            
+            <div class="columns is-variable is-6" style="margin-bottom: 1.5rem;">
+              <div class="column">
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 12px; height: 100%;">
+                  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
+                  <p style="margin: 0; font-weight: 600;">Process complex questions</p>
+                </div>
+              </div>
+              <div class="column">
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 12px; height: 100%;">
+                  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔗</div>
+                  <p style="margin: 0; font-weight: 600;">Reason through multi-step problems</p>
+                </div>
+              </div>
+              <div class="column">
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 12px; height: 100%;">
+                  <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌐</div>
+                  <p style="margin: 0; font-weight: 600;">Interact intelligently with web interfaces</p>
+                </div>
+              </div>
+            </div>
+            
+            <div style="
+              background: linear-gradient(45deg, #ffd700, #ffed4e); 
+              color: #2c3e50; 
+              padding: 1.5rem; 
+              border-radius: 12px; 
+              font-weight: 600;
+              box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            ">
+              🎉 After correctly answering all required questions, the website reveals a <strong>secret message</strong> - confirming that the agent has successfully passed the reasoning gate and overcome the throttling mechanism!
             </div>
           </div>
         </div>
@@ -253,7 +345,7 @@
   </div>
 </section>
 <!-- End teaser video -->
-
+ 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
