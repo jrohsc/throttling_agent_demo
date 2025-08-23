@@ -125,49 +125,22 @@
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="has-text-centered" style="margin-bottom: 2rem;">
-      <h2 class="title is-3">Abstract</h2>
-    </div>
-    <div class="columns is-vcentered">
-      <!-- Image Column -->
-      <div class="column is-two-fifths">
-        <figure class="image">
-          <img src="static/images/main.png" alt="Reasoning Gates Framework Overview" 
-               style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        </figure>
-      </div>
-      
-      <!-- Abstract Text Column -->
-      <div class="column is-three-fifths">
-        <div class="content has-text-justified" style="padding-left: 2rem;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        
+        <!-- Image above abstract text -->
+        <div style="margin-bottom: 2rem;">
+          <figure class="image" style="max-width: 600px; margin: 0 auto;">
+            <img src="static/images/main.png" alt="Reasoning Gates Framework Overview" 
+                 style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          </figure>
+        </div>
+        
+        <!-- Abstract text - single paragraph, centered -->
+        <div class="content has-text-justified">
           <p>
-            AI web agents access Internet resources at a far greater speed, scale, and complexity. 
-            Deployed maliciously or erroneously, these agents could overload content providers and 
-            potentially crumble critical infrastructure. While existing challenge–response defenses, 
-            such as CAPTCHAs, work against simple bots, agents powered by multi-modal large language 
-            models can easily bypass defenses due to their ability to solve complex problems and 
-            mimic human behavior.
-          </p>
-          <p>
-            In this paper, we propose to incur small cost on agents for resource access to deter 
-            adversaries. We formalize <em>web–agent throttling</em> as issuing challenges to an 
-            agent that are (1) computationally asymmetric, (2) scalable, (3) robust to specialized 
-            solvers, gig workers, or search, and (4) compatible with any agent.
-          </p>
-          <p>
-            As a first step, we introduce the <em>Reasoning Gates</em> framework, which generates 
-            synthetic text–based rebuses that require multi–hop reasoning over world knowledge. 
-            Unlike trivial puzzles that either do not scale or are easily solved by specialized 
-            solvers, reasoning gates impose a substantial solver cost while remaining cheap to 
-            produce and accessible to any AI agent.
-          </p>
-          <p>
-            Our framework achieves computational asymmetry (the response generation cost is 5× 
-            higher than the challenge generation cost for SOTA models), and legitimate users can 
-            bypass the gates through authentication. We implement our protocol for a custom website 
-            and validate its efficiency on real‐world web agents. Finally, we discuss designs to 
-            throttle billions of agents and methods to allow benign users to bypass these gates 
-            through authentication.
+            AI web agents access Internet resources at a far greater speed, scale, and complexity. Deployed maliciously or erroneously, these agents could overload content providers and potentially crumble critical infrastructure. While existing challenge–response defenses, such as CAPTCHAs, work against simple bots, agents powered by multi-modal large language models can easily bypass defenses due to their ability to solve complex problems and mimic human behavior. In this paper, we propose to incur small cost on agents for resource access to deter adversaries. We formalize <em>web–agent throttling</em> as issuing challenges to an agent that are (1) computationally asymmetric, (2) scalable, (3) robust to specialized solvers, gig workers, or search, and (4) compatible with any agent. As a first step, we introduce the <em>Reasoning Gates</em> framework, which generates synthetic text–based rebuses that require multi–hop reasoning over world knowledge. Unlike trivial puzzles that either do not scale or are easily solved by specialized solvers, reasoning gates impose a substantial solver cost while remaining cheap to produce and accessible to any AI agent. Our framework achieves computational asymmetry (the response generation cost is 5× higher than the challenge generation cost for SOTA models), and legitimate users can bypass the gates through authentication. We implement our protocol for a custom website and validate its efficiency on real‐world web agents. Finally, we discuss designs to throttle billions of agents and methods to allow benign users to bypass these gates through authentication.
           </p>
         </div>
       </div>
